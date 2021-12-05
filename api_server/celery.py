@@ -8,15 +8,13 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'api_server.settings')
 app = Celery('api_server')
 app.conf.enable_utc = False
 
-app.conf.update(timezone = 'Asia/Kolkata')
+app.conf.update(timezone='Asia/Kolkata')
 
 # Using a string here means the worker doesn't have to serialize
 # the configuration object to child processes.
 # - namespace='CELERY' means all celery-related configuration keys
 #   should have a `CELERY_` prefix.
 app.config_from_object('django.conf:settings', namespace='CELERY')
-
-# CELERY BEAT
 
 # Load task modules from all registered Django apps.
 app.autodiscover_tasks()
