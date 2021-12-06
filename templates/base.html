@@ -13,16 +13,18 @@
   </head>
   <body>
     <!-- Navbar -->
+    <form action="{% url 'youtube_api:video-list' %}" method="get">
     <nav class="navbar navbar-light navbar-expand-md bg-light sticky-top" style="border-bottom: 1px solid rgb(209, 209, 209);">
     <div class="container-fluid"><a class="navbar-brand" href="#">Youtube Lite</a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-        <div id="navcol-1" class="collapse navbar-collapse d-md-flex justify-content-md-center align-items-md-center">
-          <div class="col-md-6 d-flex nav-search-bar">
-            <input class="form-control form-control-sm" type="text" placeholder="search videos here">
-            <button type="button" class="btn btn-sm btn-outline-dark" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;">Search</button>
+      <div id="navcol-1" class="collapse navbar-collapse d-md-flex justify-content-md-center align-items-md-center">
+            <div class="col-md-6 d-flex nav-search-bar">
+              <input class="form-control form-control-sm" type="text" placeholder="search videos here" name="search_q">
+              <input type="submit" class="btn btn-sm btn-outline-dark" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;" value="Search"></input>
+            </div>
           </div>
         </div>
-    </div>
-    </nav>
+      </nav>
+    </form>
     <!-- ./Navbar -->
     <div class="row">
       <div class="col sidebar-expanded" style="max-width: 200px;">
@@ -55,7 +57,7 @@
               </div>
             </li>
             <li class="border-top my-3"></li>
-            <li class="mb-1">
+            <!-- <li class="mb-1">
               <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
                 Documentation
               </button>
@@ -67,7 +69,7 @@
                   <li><a href="#" class="link-dark rounded">Sign out</a></li>
                 </ul>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
         <!-- ./Sidebar -->
