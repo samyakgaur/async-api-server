@@ -16,7 +16,7 @@
     <nav class="navbar navbar-light navbar-expand-md bg-light sticky-top" style="border-bottom: 1px solid rgb(209, 209, 209);">
     <div class="container-fluid"><a class="navbar-brand" href="#">Youtube Lite</a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
         <div id="navcol-1" class="collapse navbar-collapse d-md-flex justify-content-md-center align-items-md-center">
-          <div class="col-md-7 d-flex">
+          <div class="col-md-6 d-flex nav-search-bar">
             <input class="form-control form-control-sm" type="text" placeholder="search videos here">
             <button type="button" class="btn btn-sm btn-outline-dark" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;">Search</button>
           </div>
@@ -34,46 +34,30 @@
           <ul class="list-unstyled ps-0">
             <li class="mb-1">
               <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-                Home
+                Youtube API's
               </button>
               <div class="collapse show" id="home-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Overview</a></li>
-                  <li><a href="#" class="link-dark rounded">Updates</a></li>
-                  <li><a href="#" class="link-dark rounded">Reports</a></li>
+                  <li><a href="{% url 'youtube_api:key' %}" class="link-dark rounded">API Keys</a></li>
+                  <li><a href="{% url 'youtube_api:topic' %}" class="link-dark rounded">Topics</a></li>
+                  <li><a href="{% url 'youtube_api:video-list' %}" class="link-dark rounded">Feed</a></li>
                 </ul>
               </div>
             </li>
             <li class="mb-1">
               <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                Dashboard
+                Twitter
               </button>
               <div class="collapse" id="dashboard-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Overview</a></li>
-                  <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                  <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                  <li><a href="#" class="link-dark rounded">Annually</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                Orders
-              </button>
-              <div class="collapse" id="orders-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">New</a></li>
-                  <li><a href="#" class="link-dark rounded">Processed</a></li>
-                  <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                  <li><a href="#" class="link-dark rounded">Returned</a></li>
+                  <li><a href="#" class="link-dark rounded">comming soon!</a></li>
                 </ul>
               </div>
             </li>
             <li class="border-top my-3"></li>
             <li class="mb-1">
               <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                Account
+                Documentation
               </button>
               <div class="collapse" id="account-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -91,43 +75,6 @@
       <div class="col">
           {% block content %}
           {% endblock %}
-        <p class="m-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores id, nesciunt distinctio neque placeat culpa? Consectetur adipisci ipsum corporis nemo officiis aliquam odit, voluptatibus vel, minus, ipsam maiores reiciendis.
-        </p>
-        <p class="m-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores id, nesciunt distinctio neque placeat culpa? Consectetur adipisci ipsum corporis nemo officiis aliquam odit, voluptatibus vel, minus, ipsam maiores reiciendis.
-        </p>
-        <p class="m-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores id, nesciunt distinctio neque placeat culpa? Consectetur adipisci ipsum corporis nemo officiis aliquam odit, voluptatibus vel, minus, ipsam maiores reiciendis.
-        </p>
-        <p class="m-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores id, nesciunt distinctio neque placeat culpa? Consectetur adipisci ipsum corporis nemo officiis aliquam odit, voluptatibus vel, minus, ipsam maiores reiciendis.
-        </p>
-        <p class="m-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores id, nesciunt distinctio neque placeat culpa? Consectetur adipisci ipsum corporis nemo officiis aliquam odit, voluptatibus vel, minus, ipsam maiores reiciendis.
-        </p>
-        <p class="m-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores id, nesciunt distinctio neque placeat culpa? Consectetur adipisci ipsum corporis nemo officiis aliquam odit, voluptatibus vel, minus, ipsam maiores reiciendis.
-        </p>
-        <p class="m-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores id, nesciunt distinctio neque placeat culpa? Consectetur adipisci ipsum corporis nemo officiis aliquam odit, voluptatibus vel, minus, ipsam maiores reiciendis.
-        </p>
-        <p class="m-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores id, nesciunt distinctio neque placeat culpa? Consectetur adipisci ipsum corporis nemo officiis aliquam odit, voluptatibus vel, minus, ipsam maiores reiciendis.
-        </p>
-        <p class="m-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores id, nesciunt distinctio neque placeat culpa? Consectetur adipisci ipsum corporis nemo officiis aliquam odit, voluptatibus vel, minus, ipsam maiores reiciendis.
-        </p>
-        <p class="m-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores id, nesciunt distinctio neque placeat culpa? Consectetur adipisci ipsum corporis nemo officiis aliquam odit, voluptatibus vel, minus, ipsam maiores reiciendis.
-        </p>
-        <p class="m-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores id, nesciunt distinctio neque placeat culpa? Consectetur adipisci ipsum corporis nemo officiis aliquam odit, voluptatibus vel, minus, ipsam maiores reiciendis.
-        </p>
-        <p class="m-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores id, nesciunt distinctio neque placeat culpa? Consectetur adipisci ipsum corporis nemo officiis aliquam odit, voluptatibus vel, minus, ipsam maiores reiciendis.
-        </p>
-
       </div>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
