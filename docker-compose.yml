@@ -30,6 +30,7 @@ services:
             - django_api_server
             - redis
             - celery_worker
+        restart: on-failure:5
     redis:
         image: "redis:alpine"
         ports:
