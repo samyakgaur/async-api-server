@@ -42,12 +42,15 @@ All the required services will be up by now!
 After running the above commands:
 - Visit `http://127.0.0.1:8000/youtube/key/`
         Add youtube API Keys. Make sure you add 2-3 API Keys to ensure uninterrupted feed.
+![Screenshot 2021-12-07 at 1 54 59 PM](https://user-images.githubusercontent.com/13183316/144993132-0b67db03-72ae-45b9-8ed7-c4e0903ab030.png)
 
 - Visit `http://127.0.0.1:8000/youtube/topic/`
         Add a topic by clicking on `Add Topic` button. Then click on the `select` button to select the topic
+![Screenshot 2021-12-07 at 1 56 19 PM](https://user-images.githubusercontent.com/13183316/144993355-1cdb0638-fde2-4c61-a8ad-aa7071a561c4.png)
 
 - Visit `http://127.0.0.1:8000/youtube/video/`
    You should see the data flowing in!
+![Screenshot 2021-12-07 at 1 56 51 PM](https://user-images.githubusercontent.com/13183316/144993443-cc16bd11-3957-4db3-8306-1dcdd6d8e959.png)
 
 
 ## API Support
